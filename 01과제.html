@@ -12,7 +12,7 @@
     var s=onul.getSeconds();
     m= dasi(m);
     s= dasi(s);
-    document.getElementById('test').innerHTML = dd[d]+"day"+h+":"+m+":"+s;
+    document.getElementById('test').innerHTML = dd[d]+"day "+h+":"+m+":"+s;
     var t = setTimeout(function(){sijak()},1000);
     }
     function dasi(i){
@@ -24,11 +24,6 @@
 <body onload="sijak()">
 
     <div id="test"></div>
-
-
-
-
-
 
 </body>
 </html>
