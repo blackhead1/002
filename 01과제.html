@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
 <script>
     function sijak(){
     var onul=new Date();
@@ -12,14 +11,14 @@
     var s=onul.getSeconds();
     m= dasi(m);
     s= dasi(s);
-    document.getElementById('test').innerHTML = dd[d]+"day "+h+":"+m+":"+s;
+    document.getElementById('test').innerHTML = dd[d]+"day"+h+":"+m+":"+s;
     var t = setTimeout(function(){sijak()},1000);
     }
     function dasi(i){
         if(i<10){i="0"+i};
         return i;
     }       
-    </script>
+</script>
 </head>
 <body onload="sijak()">
 
