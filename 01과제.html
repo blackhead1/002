@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<script>
+    function sijak(){
+    var onul=new Date();
+    var dd=["Sun","Mon","Tues","Wednes","Thurs","Fri","Satur"];
+    var d=onul.getDay();
+    var h=onul.getHours();
+    var m=onul.getMinutes();
+    var s=onul.getSeconds();
+    m= dasi(m);
+    s= dasi(s);
+    document.getElementById('test').innerHTML = dd[d]+"day"+h+":"+m+":"+s;
+    var t = setTimeout(function(){sijak()},1000);
+    }
+    function dasi(i){
+        if(i<10){i="0"+i};
+        return i;
+    }       
+    </script>
+</head>
+<body onload="sijak()">
+
+    <div id="test"></div>
+
+
+
+
+
+
+</body>
+</html>
